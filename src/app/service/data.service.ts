@@ -2,7 +2,7 @@ import {Note} from "../model/Note";
 
 export class DataService {
 
-  private data: Note[] = [new Note({text: 'asdf', id: 10}), new Note({text: 'asdf', id: 10})];
+  private data: Note[] = [];
 
   getData(): Note[] {
     return this.data;
