@@ -1,0 +1,20 @@
+.notesList {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 18px;
+
+  text-align: center;
+
+  .note-wrapper {
+    width: 100%;
+  }
+
+  .note__buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

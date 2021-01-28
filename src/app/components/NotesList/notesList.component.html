@@ -1,0 +1,3 @@
+<div class="notesList" *ngFor="let note of notes">
+  <note class="note-wrapper" [note]="note" (remove)="removeNote($event)"></note>
+</div>

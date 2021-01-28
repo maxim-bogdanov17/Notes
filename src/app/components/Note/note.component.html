@@ -1,0 +1,17 @@
+<div class="note">
+  <input class="note__checkbox" type="checkbox" [(ngModel)]="note.completed">
+
+  <div class="note__text-textarea" [ngClass]="{note__texts_completed: note.completed}">
+    <textarea *ngIf="isEditing" class="note__note note__textarea" [(ngModel)]="note.text" type="text"></textarea>
+    <div *ngIf="!isEditing" class="note__note note__text">{{note.text}}</div>
+  </div>
+
+  <div class="note__buttons">
+    <button class="note__button note__button-apply" *ngIf="isEditing" (click)="toggleMode()">Save</button>
+    <button class="note__button note__button-apply" *ngIf="!isEditing" (click)="toggleMode()">Edit</button>
+    <button class="note__button note__button-remove" (click)="onRemove()">Remove</button>
+  </div>
+
+</div>
+
+

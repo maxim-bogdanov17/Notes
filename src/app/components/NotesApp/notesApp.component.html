@@ -1,0 +1,10 @@
+<div class="notesApp">
+  <header>
+    <h1 class="title">Notes</h1>
+  </header>
+  <div class="writeNote">
+    <textarea class="writeNote__text" placeholder="Add a note" [(ngModel)]="text"></textarea>
+    <button class="writeNote__button" [disabled]="!text.length" (click)="addNote()"></button>
+  </div>
+  <notesList class="notesList" [notes]="notes" (remove)="removeNote($event)"></notesList>
+</div>

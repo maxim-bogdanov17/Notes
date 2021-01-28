@@ -1,0 +1,66 @@
+.note {
+  position: relative;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__texts_completed > &__note {
+    background-color: #ceffc2;
+  }
+
+  &__note {
+    width: 350px;
+    margin: 4px;
+    padding: 8px 16px;
+
+    font: inherit;
+    text-align: left;
+    word-wrap: break-word;
+
+    border: 2px solid black;
+    border-radius: 25px;
+    outline: none;
+  }
+
+  &__checkbox {
+    position: absolute;
+    left: -30px;
+
+    transform: scale(1.7);
+  }
+
+  &__textarea {
+    height: 90px;
+
+    border: 2px solid red;
+
+    resize: none;
+  }
+
+  &__buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+
+  &__button {
+    font-weight: 600;
+    font-size: 23px;
+    font-family: "Hind", sans-serif;
+    text-transform: uppercase;
+
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+    &-apply {
+      color: #000000;
+    }
+
+    &-remove {
+      color: red;
+    }
+  }
+}
